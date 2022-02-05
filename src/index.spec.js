@@ -71,7 +71,7 @@ describe('Board 요구사항 테스트', () => {
     test('Site 에 추가된 Board만 사용 가능한 것으로 간주하며 사용 불가능한 Board에는 Article을 추가할 수 없다.', () => {
         const addedBoard = new Board('사이트에 추가된 게시판');
         const notAddedBoard = new Board('사이트에 추가되지 않은 게시판');
-
+        
         mySite.addBoard(addedBoard);
 
         expect(() => {
